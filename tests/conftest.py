@@ -11,7 +11,7 @@ def client():
 @pytest.fixture
 def mock_loadClubs():
     clubs = [
-        {"name": "Simply Lift", "email": "john@simplylift.co", "points": "15"},
+        {"name": "Simply Lift", "email": "john@simplylift.co", "points": "13"},
         {"name": "Iron Temple", "email": "admin@irontemple.com", "points": "4"},
         {"name": "She Lifts", "email": "kate@shelifts.co.uk", "points": "12"},
         {"name": "Wing chun", "email": "yipman@grandmaster.cn", "points": "50"},
@@ -27,7 +27,7 @@ def mock_loadCompetitions():
             "date": "2020-03-27 10:00:00",
             "numberOfPlaces": "25",
         },
-        {"name": "Fall Classic", "date": "2020-10-22 13:30:00", "numberOfPlaces": "3"},
+        {"name": "Fall Classic", "date": "2020-10-22 13:30:00", "numberOfPlaces": "13"},
         {
             "name": "Spring Boxing",
             "date": "2023-06-30 12:00:00",
