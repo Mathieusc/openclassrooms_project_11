@@ -10,8 +10,8 @@
     <form action="showSummary" method="post">
         <label for="email">Email:</label>
         <input type="email" name="email" id=""/>
-        <button type="submit">Enter</button>
-
+        <button type="submit">Enter</button><br/>
+        <a href="{{url_for('display_board')}}">Display Board</a>
         {% with messages = get_flashed_messages()%}
         {% if messages %}
             <ul>
