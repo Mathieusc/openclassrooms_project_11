@@ -1,7 +1,9 @@
-from locust import HttpUser, task
+from locust import HttpUser, task, between
 
 
 class ProjectPerfTest(HttpUser):
+    wait_time = between(1, 5)
+
     @task
     def home(self):
         self.client.get("/")
